@@ -6,13 +6,12 @@ import Common from "@/styles/globalStyles";
 
 const S = {
   ImageDiv: styled(Image)`
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+    max-width: 500px;
+    max-height: 600px;
+    border-radius: 5%;
   `,
 };
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <Common.MainDiv>
       <Common.MarginDiv>
