@@ -1,0 +1,17 @@
+.buttonP {
+  color: #4298e8;
+  font-weight: bold;
+  font-size: large;
+}
+
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttonContainer {
+  padding: 24px;
+  background: white;
+  width: 400px;
+  height: 200px;
+}
