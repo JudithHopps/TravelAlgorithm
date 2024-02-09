@@ -1,0 +1,17 @@
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image {
+  width: calc(100% - 48px);
+  height: 135vw;
+
+  @media (min-width: 500px) {
+    .imageContainer {
+      height: 130vw;
+    }
+  }
+}
