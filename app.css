@@ -17,3 +17,6 @@ a {
 a:hover {
   border-bottom: 1px solid #0076ff;
 }
+p {
+  margin: 0px;
+}

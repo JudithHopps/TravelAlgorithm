@@ -1,7 +1,8 @@
 .svg {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
 }
 .arm {
   transform-origin: 130px 106px;
