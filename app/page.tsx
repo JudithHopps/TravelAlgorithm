@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import ViewSource from "../components/view-source";
 import main from "../public/main.png";
 import styles from "./page.module.css";
