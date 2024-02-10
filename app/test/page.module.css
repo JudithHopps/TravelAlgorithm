@@ -1,0 +1,44 @@
+.test {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 0;
+}
+.ticket {
+  width: calc(100% - 100px);
+}
+
+.QuestionContainer {
+  width: calc(100% - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.QuestionDiv {
+  background-color: #18a8f1;
+  margin: 12px;
+  border-radius: 12px;
+  width: 100%;
+  height: 10vh;
+  opacity: 70%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.p {
+  color: white;
+  opacity: 1;
+  max-width: 95%;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
