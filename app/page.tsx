@@ -9,7 +9,7 @@ const Home = () => (
     <ViewSource pathname="app/page.tsx" />
     <div className={styles.imageContainer}>
       <Image
-        alt="Mountains"
+        alt="main"
         src={main}
         layout="fill"
         sizes="100vw"
