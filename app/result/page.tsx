@@ -6,19 +6,7 @@ import mountains from "../../public/mountains.jpg";
 const BackgroundPage = () => (
   <div>
     <ViewSource pathname="app/background/page.tsx" />
-    <div className={styles.bgWrap}>
-      <Image
-        alt="Mountains"
-        src={mountains}
-        placeholder="blur"
-        quality={100}
-        fill
-        sizes="100vw"
-        style={{
-          objectFit: "cover",
-        }}
-      />
-    </div>
+    <div className={styles.bgWrap}></div>
     <p className={styles.bgText}>
       Image Component
       <br />
