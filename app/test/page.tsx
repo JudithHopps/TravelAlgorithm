@@ -6,10 +6,17 @@ import ViewSource from "../../components/view-source";
 import main from "../../public/main.png";
 import ticket from "../../public/ticket.png";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 type Props = {
   question: string;
 };
+type QuestionsType = {
+  id: number;
+  question: string;
+  answer1: string;
+  answer2: string;
+};
+
 const QuestionDiv: React.FC<Props> = ({ question }) => (
   <div className={styles.QuestionDiv}>
     <p className={styles.p}> {question}</p>
@@ -18,7 +25,13 @@ const QuestionDiv: React.FC<Props> = ({ question }) => (
 const Test = () => {
   const [allstage, setAllstage] = useState(12);
   const [stage, setStage] = useState(0);
+  const data: QuestionsType[] = require("../../public/data/questionData.json");
 
+  useEffect(() => {
+    if (data) {
+      setAllstage(data.length);
+    }
+  }, []);
   return (
     <div className={styles.test}>
       <ViewSource pathname="app/test/page.tsx" />
@@ -32,8 +45,8 @@ const Test = () => {
           <Image src={ticket} alt="ticket" />
         </div>
         <div className={styles.QuestionContainer}>
-          <QuestionDiv question="질문 1" />
-          <QuestionDiv question="질문 2" />
+          <QuestionDiv question={data[stage].answer1} />
+          <QuestionDiv question={data[stage].answer2} />
         </div>
       </div>
     </div>
