@@ -48,9 +48,10 @@ const Test = () => {
       <h1>temp</h1>
       {/* <Image src={main} alt="main" height={160} objectFit="cover" /> */}
       <div className={styles.Container}>
-        <h1>
+        <p>
           {stage} / {allstage}{" "}
-        </h1>
+        </p>
+        <h1>{data[stage - 1].question}</h1>
         <div className={styles.ticket}>
           <Image src={ticket} alt="ticket" />
         </div>
